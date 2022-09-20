@@ -1,2 +1,2 @@
 # rn26-duongtm
-asdas
+This my Github in NodeJS Course
