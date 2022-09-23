@@ -23,8 +23,19 @@
     div.footer>h2{
         text-align: center;
     }
+    ul{
+        list-style-type: none;
+    }
     ul>li{
         padding:5px;
+    }
+    ul>li::before{
+        content: "\002B";
+        color: red;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
     }
     </style>
 </head>
