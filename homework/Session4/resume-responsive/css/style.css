@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+.header-title{
+  background-color: black;
+  color: #fff;
+  width: 430px;
+  padding: 70px 132px 43px 68px;
+  height: 134px;
+}
+.header-title>h1{
+  font-size: 40px;
+  font-weight:300;
+}
+.your-name{
+  margin:20px 0px 20px 90px;
+  padding:20px;
+}
+.your-name>.name{
+  font-size:100px;
+  font-weight: 400;
+  letter-spacing: 20px;
+  color:#848785;
+}
+.your-name>.job-title{
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  color:#848785;
+}
+.information{
+  background-color:black;
+  color:#fff;
+  padding:40px 10px 20px 10px;
+}
+img.avatar{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+h3.info-title{
+  font-weight: 200;
+  font-size: 35px;
+  margin-bottom:15px;
+}
+p.introduce{
+  font-weight: 500;
+  font-size:20px ;
+}
+p.info-left{
+  font-size:21px;
+  font-style: italic;
+  font-weight: 200;
+}
+.li-hob{
+  padding:10px 0px 20px 10px;
+}
+.li-hob>li{
+  padding:5px;
+  list-style-type: none;
+  font-size:21px;
+  font-style: italic;
+  font-weight: 200;
+}
+i{
+  font-size:18px;
+  padding-right:5px;
+}
+.job-skill .col-md-8{
+  padding:20px;
+}
+h3.title-ex{
+  color:#848785;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin:0px 0px 25px 35px;
+  font-weight: 200;
+}
+.job-ex>li{
+  list-style-type:none ;
+}
+h4.company-name{
+  font-weight: bold;
+  color:#848785;
+}
+h4.p-h{
+  color:#848785;
+  font-style: italic;
+}
+p.des{
+  font-weight: 500;
+  font-style: italic;
+}
+.prog.col-md-7 {
+  margin-top: 9px;
+}
+.progress-bar{
+  background-color: black;
+}
+/* Responsive fix */
+@media only screen and (max-width: 768px){
+  .your-name{
+    margin:0;
+    padding:0;
+  }
+  .name{
+    font-size:70 ;
+    letter-spacing: 1px;
+  }
+  .header-title{
+    padding:40px;
+    width: 100%;
+    text-align: center;
+    height: 134px;
+  }
+  .job-skill{
+    margin-top:40px;
+  }
+  div.col-md-5{
+    margin-top:5px;
+  }
+}
+/* Responsive fix */
+
+
+
+
+
+
+
