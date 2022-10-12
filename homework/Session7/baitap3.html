@@ -7,11 +7,14 @@
     <title>Bai tap 3 - ss7</title>
 </head>
 <body>
+    <label for="number">Nhập số ký tự tam giác vuông bạn muốn xếp? : </label>
+    <input type="number" id="numTri">
     <button onclick="triSquare()">Xác nhận in Tam Giác Vuông</button>
 </body>
 <script>
     function triSquare() {
-        for (let i = 0; i < 5; i++) {
+        const n = document.getElementById("numTri").value
+        for (let i = 0; i < n; i++) {
             for (let j = 0; j <= i; j++) {
                 document.writeln(' * ')
             }

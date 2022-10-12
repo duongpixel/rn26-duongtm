@@ -7,12 +7,23 @@
     <title>Baitap 2 - ss7</title>
 </head>
 <body>
-    <label for="fib">Nhập giá trị Fib cần tìm ( Nhỏ hơn 8 ) : </label>
+    <label for="fib">Nhập gía trị cần tìm dãy số FIB : </label>
     <input type="number" id="fib">
     <button onclick="findFib()">Xác Nhận</button>
 </body>
 <script>
     function findFib() {
+        const n = document.getElementById("fib").value
+        let n1 = 0
+        let n2 = 1 
+        let s = 0 
+        s = n1 + n2 
+        for(;s <= n ;){
+            document.writeln(s)
+            n1 = n2 
+            n2 = s
+            s = n1 + n2
+        }
     }
 </script>
 </html>
