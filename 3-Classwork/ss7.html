@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS7 - Classwork</title>
+</head>
+<body>
+    <label for="int">Nhập vào số nguyên của bạn : </label>
+    <input type="number" id="int">
+    <button onclick="findInt()">Tim so nguyen </button>
+    <button onclick="numMin()">Tim so Min </button>
+    <button onclick="conInt()">Tim int tu float </button>
+    <button onclick="findNumb()">Tim don vi</button>
+    <br>
+    <label for="checkInt">Nhập số cần kiểm tra</label>
+    <input type="number" id="checkInt">
+    <button onclick="checkInt()">Kiểm tra</button>
+
+</body>
+<script>
+    function findInt(){
+        let x = document.getElementById("int").value
+        let r = 0
+        r = x * 2 
+        document.writeln(r)
+    }
+    function numMin(){
+        let a = 2 , b = 6 , c = 3 , d = 9 , min = a 
+        if (b < min ) {min = b}
+        if (c < min ) {min = c} 
+        if (d < min ) {min = d}
+        document.writeln(min)
+    }
+    function conInt(){
+        let n = 9 
+        let int = (n-1)/2 
+        document.writeln((parseInt(int)))
+    }
+    function findNumb(){
+        let n = 24, n2 = n/10 , n3 = (n%10)%10
+        document.writeln((parseInt(n2))+'<br/>')
+        document.writeln((parseInt(n3)))
+    }
+    function checkInt(){
+        let n = document.getElementById("checkInt").value
+        let check = true
+        for (let i = 2; i < 4 ; i++) {
+            if(n % i === 0 ){
+                check = false
+            }
+        }
+        document.writeln(check)
+
+    }
+</script>
+</html>
