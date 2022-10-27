@@ -48,8 +48,8 @@ const myHtmlContent = `
     <td>Thornton</td>
     <td>@fat</td>
     <td>
-        <button class="btn btn-success">Detail</button>
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-success">Chi tiết</button>
+        <button class="btn btn-danger">Xóa</button>
     </td>
 `;
 
@@ -67,10 +67,10 @@ function formatRow(user) {
     <td>
         <button class="btn btn-success" onclick="gotoDetailEx(${
           user?.id
-        })">Detail</button>
+        })">Chi tiết</button>
         <button class="btn btn-danger" onclick="deleteUser(${
           user?.id
-        })">Delete</button>
+        })">Xóa</button>
     </td>
 `;
 }
@@ -81,7 +81,7 @@ function deleteUser(id) {
 
 function deleteUserAPI(id) {
   console.log("deleteUserAPI", id);
-  fetch("https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/users/" + id, {
+  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/users/" + id, {
     method: "DELETE",
   })
     .then((response) => response.json())
@@ -120,7 +120,7 @@ function addCollumnJquery() {
 
 function getListUsers() {
   fetch(
-    "https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/users?page=1&limit=10",
+    "https://635a488038725a1746c20106.mockapi.io/api/v1/users?page=1&limit=10",
     {
       method: "GET",
     }
@@ -140,7 +140,7 @@ function postUser() {
     avatar:
       "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/254.jpg",
   };
-  fetch("https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/users", {
+  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
