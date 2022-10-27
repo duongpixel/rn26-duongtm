@@ -4,7 +4,7 @@ window.onload = function () {
 };
 
 function getUser(id) {
-  let url = "https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/users/" + id
+  let url = "https://635a488038725a1746c20106.mockapi.io/api/v1/person/" + id
   fetch(url, {
     method: "GET",
   })
@@ -27,9 +27,17 @@ function getIdUrl() {
 
 function renderInfo(user) {
   const contentHTML = `
-    <p>${user?.id}</p>
-    <p>${user?.name}</p>
+    <p><b>ID : </b>${user?.id}</p>
+    <p><b>Full Name : </b>${user?.name}</p>
+    <p><b> Age : </b>${user?.age}</p>
+    <p><b>Address : </b> ${user?.address}</p>
   `;
   const elm = document.getElementById("info");
   elm.innerHTML = contentHTML;
+}
+function gotoUpdate() {
+  let id = getIdUrl();
+  console.log(window.location.href, id);
+  // ?id=1 -> params url
+  window.location.href = "./register.html?id=" + id; // redirect
 }

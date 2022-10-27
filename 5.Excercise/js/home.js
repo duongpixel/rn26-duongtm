@@ -1,3 +1,4 @@
+
 if (typeof document === "undefined") {
   // during server evaluation
   console.log("Server loadding...!!!!");
@@ -17,9 +18,9 @@ if (typeof document === "undefined") {
   // footer
   $.get("./footer.html", function(data, status){
     // alert("Data: " + data + "\nStatus: " + status);
-    document.querySelector("footer").innerHTML = data;
+    // document.querySelector("footer").innerHTML = data;
   });
-  }
+};
 
  
 

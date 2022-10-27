@@ -57,13 +57,12 @@ function gotoDetailEx(id) {
   console.log("gotoDetailEx", id);
   window.location.href = `./detail.html?id=${id}`;
 }
-
 function formatRow(user) {
   return `
     <th scope="row" onclick="postUser()">${user?.id}</th>
     <td>${user?.name}</td>
-    <td class="text-break">${user?.avatar}</td>
-    <td>${user?.name.split(" ")[0]}</td>
+    <td class="text-break">${user?.age}</td>
+    <td>${user?.address}</td>
     <td>
         <button class="btn btn-success" onclick="gotoDetailEx(${
           user?.id
@@ -81,7 +80,7 @@ function deleteUser(id) {
 
 function deleteUserAPI(id) {
   console.log("deleteUserAPI", id);
-  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/users/" + id, {
+  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/person/" + id, {
     method: "DELETE",
   })
     .then((response) => response.json())
@@ -120,7 +119,7 @@ function addCollumnJquery() {
 
 function getListUsers() {
   fetch(
-    "https://635a488038725a1746c20106.mockapi.io/api/v1/users?page=1&limit=10",
+    "https://635a488038725a1746c20106.mockapi.io/api/v1/person/?page=1&limit=10",
     {
       method: "GET",
     }
@@ -140,7 +139,7 @@ function postUser() {
     avatar:
       "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/254.jpg",
   };
-  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/users", {
+  fetch("https://635a488038725a1746c20106.mockapi.io/api/v1/person/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
