@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!-- <header></header> -->
-    <iframe class="w-100" style="height: 70px;" src="./header.html" seamless></iframe>
+    <header></header>
+    <!-- <iframe class="w-100" style="height: 70px;" src="./header.html" seamless></iframe> -->
     <form id="myForm" class="w-50 m-auto mt-3" onsubmit="return false;">
         <div class="mb-3">
             <label for="input__email" class="form-label">Email address</label>
@@ -175,7 +176,7 @@
             },
             messages: {
                 email: {
-                    required: 'Bạn chưa nhập email',
+                    required: 'Địa chỉ email đăng nhập không được để trống',
                     minlength: jQuery.validator.format('Tối thiểu {0} ký tự'),
                     email: 'Địa chỉ email không hợp lệ',
                 },
@@ -189,6 +190,7 @@
 
         var validator = $('#myForm').validate(settings);
     </script>
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
